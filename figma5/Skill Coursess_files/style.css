@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #252525;
+}
+
+.courses {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 30px 32px 40px;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 68px;
+}
+
+.header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.header h1 a {
+  color: #5b48d9;
+  text-decoration: underline;
+  text-decoration-color: #e6a33a;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.header p {
+  color: #536171;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Grid */
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 26px;
+}
+
+/* Card */
+
+.card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 205px;
+  display: block;
+  object-fit: cover;
+}
+
+.card-body {
+  min-height: 180px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  color: #68717c;
+  font-size: 16px;
+}
+
+.star {
+  color: #2c9d69;
+  font-size: 18px;
+}
+
+.enroll {
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 24px;
+
+  color: #654dd7;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.enroll span {
+  display: inline-block;
+  margin-left: 7px;
+  font-size: 21px;
+  transition: transform 0.2s ease;
+}
+
+.enroll:hover span {
+  transform: translateX(4px);
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+
+  .courses {
+    padding: 30px 24px;
+  }
+
+  .header {
+    margin-bottom: 45px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .card img {
+    height: 230px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .courses {
+    padding: 24px 16px 35px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card-body {
+    min-height: 175px;
+    padding: 22px 20px;
+  }
+
+  .card-body h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .meta {
+    font-size: 15px;
+  }
+
+  .enroll {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 400px) {
+
+  .courses {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .header p {
+    font-size: 15px;
+  }
+
+  .card img {
+    height: 190px;
+  }
+
+  .card-body {
+    padding: 19px 17px;
+  }
+}
